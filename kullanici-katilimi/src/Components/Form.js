@@ -19,27 +19,27 @@ function Form(props) {
   return (
     <form className="form-container" onSubmit={onSubmit}>
       <label htmlFor="firstname">First Name:</label>
-      <input id="firstname" type="text" name="firstname" value={formValues.firstname} onChange={onChange} />
+      <input id="firstname" data-cy="firstname" type="text" name="firstname" value={formValues.firstname} onChange={onChange} />
       <div id="firstname-error" className="errors">
         {formErrors.firstname}
       </div>
       <label htmlFor="lastname">Last Name:</label>
-      <input id="lastname" type="text" name="lastname" value={formValues.lastname} onChange={onChange} />
+      <input id="lastname" data-cy="lastname" type="text" name="lastname" value={formValues.lastname} onChange={onChange} />
       <div id="lastname-error" className="errors">
         {formErrors.lastname}
       </div>
       <label htmlFor="email">Email:</label>
-      <input id="email" type="email" name="email" value={formValues.email} onChange={onChange} />
+      <input id="email" data-cy="email" type="email" name="email" value={formValues.email} onChange={onChange} />
       <div id="email-error" className="errors">
         {formErrors.email}
       </div>
       <label htmlFor="password">Password:</label>
-      <input id="password" type="password" name="password" value={formValues.password} onChange={onChange} />
+      <input id="password" data-cy="password" type="password" name="password" value={formValues.password} onChange={onChange} />
       <div id="password-error" className="errors">
         {formErrors.password}
       </div>
       <label htmlFor="terms">Agree To Terms Of Service:</label>
-      <input id="terms" type="checkbox" name="termsOfService" value={formValues.termsOfService} onChange={onChange} />
+      <input id="terms" data-cy="terms" type="checkbox" name="termsOfService" value={formValues.termsOfService} onChange={onChange} />
       <button id="create-user" disabled={disabled}>
         Create User
       </button>

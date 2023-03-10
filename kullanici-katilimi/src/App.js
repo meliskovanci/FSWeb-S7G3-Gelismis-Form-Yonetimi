@@ -64,7 +64,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1 className="title">User Onboarding</h1>
+      <h1 className="title">Kullanıcı Katılımı</h1>
       <Form formValues={formValues} setFormValues={setFormValues} disabled={disabled} validate={validate} formErrors={formErrors} submit={submit} />
       {appearance && (
         <div className="user-container">
